@@ -3,34 +3,26 @@
 import PackageDescription
 
 let package = Package(
-    name: "PascalRunPM",
+    name: "PascalRun",
     platforms: [
-        .macOS(.v13)
+        .iOS(.v15),
+        .macOS(.v12)
     ],
     products: [
-        .executable(
-            name: "PascalRunPM",
-            targets: ["PascalRunPM"]
+        .library(
+            name: "PascalRun",
+            targets: ["PascalRun"]
         )
     ],
-    dependencies: [
-        // Add dependencies here if the project uses any external packages
-        // Example:
-         .package(url: "https://github.com/EasyPineapleNut4422310/Pascal-run.pm.git", from: "1.0.0")
-    ],
     targets: [
-        .executableTarget(
-            name: "PascalRunPM",
-            dependencies: [
-                // If using ArgumentParser, uncomment:
-                // .product(name: "ArgumentParser", package: "swift-argument-parser")
-            ],
-            path: "Sources/PascalRunPM"
+        .target(
+            name: "PascalRun",
+            path: "Sources/PascalRun"
         ),
         .testTarget(
-            name: "PascalRunPMTests",
-            dependencies: ["PascalRunPM"],
-            path: "Tests/PascalRunPMTests"
+            name: "PascalRunTests",
+            dependencies: ["PascalRun"],
+            path: "Tests/PascalRunTests"
         )
     ]
 )
