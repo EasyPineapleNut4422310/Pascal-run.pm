@@ -1,0 +1,7 @@
+{
+  "name": "json-utils",
+  "version": "1.0.0",
+  "author": "your-username",
+  "units": ["jsonparser"],
+  "dependencies": {}
+}
