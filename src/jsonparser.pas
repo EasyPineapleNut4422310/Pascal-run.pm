@@ -1,16 +1,3 @@
-unit jsonparser;
+// This is the Package.swift content
 
-{$mode objfpc}{$H+}
-
-interface
-
-function ParseJSON(const s: string): string;
-
-implementation
-
-function ParseJSON(const s: string): string;
-begin
-  Result := 'Parsed JSON: ' + s;
-end;
-
-end.
+// Add your Package.swift content here
