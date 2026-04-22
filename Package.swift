@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         // Add dependencies here if the project uses any external packages
         // Example:
-         .package(url: "https://github.com/EasyPineapleNut4422310/Pascal-run.pm/tree/main", from: "1.0.0")
+         .package(url: "https://github.com/EasyPineapleNut4422310/Pascal-run.pm.git", from: "1.0.0")
     ],
     targets: [
         .executableTarget(
